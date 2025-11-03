@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bali</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-bar">
+        <p class="logo">Bali.</p>
+        <button class="menu-toggle" id="menuToggle">Menu</button>
+        <nav id="navbar">
+          <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#cerita">Cerita Kami</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <section class="hero-content">
+        <h1>Bali — Surga Budaya, Alam & Petualangan.</h1>
+        <p>
+          Jelajahi Bali, di mana setiap sudut menyimpan keajaiban yang tak
+          terlupakan.
+        </p>
+      </section>
+
+      <aside class="hero-content-1">
+        <div>
+          <h2>Bali</h2>
+          <p>
+            Bali adalah pulau di Indonesia yang terkenal dengan keindahan alam,
+            budaya unik, dan keramahan penduduknya.
+          </p>
+        </div>
+      </aside>
+
+      <section class="hero-content-2">
+        <div class="location">
+          <p>Pantai Kelingking, Nusa Penida</p>
+        </div>
+
+        <div class="stats">
+          <div>
+            <h3>250+</h3>
+            <p>Tempat Wisata</p>
+          </div>
+          <div>
+            <h3>1000+</h3>
+            <p>Pura</p>
+          </div>
+          <div>
+            <h3>50+</h3>
+            <p>Kuliner</p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <span>Tentang Kami</span>
+      <h2>Lebih Dekat Dengan Bali</h2>
+      <div class="buttons">
+        <button class="active" onclick="showContent('bali', this)">Bali</button>
+        <button onclick="showContent('sejarah', this)">Sejarah</button>
+        <button onclick="showContent('geografi', this)">Geografi</button>
+        <button onclick="showContent('budaya', this)">Budaya & Tradisi</button>
+      </div>
+
+      <section id="bali" class="content">
+        <article>
+          <h3>Bali</h3>
+          <p>
+            Bali adalah provinsi di Indonesia dengan ibu kota Denpasar, dikenal
+            sebagai Pulau Dewata dan Pulau Seribu Pura karena kekayaan seni,
+            budaya, dan pura yang tersebar di seluruh pulau. Selain pulau utama,
+            wilayah Bali juga mencakup pulau-pulau kecil seperti Nusa Penida,
+            Nusa Lembongan, Nusa Ceningan, Serangan, dan Menjangan. Mayoritas
+            penduduknya memeluk agama Hindu Bali, yang membentuk adat dan
+            tradisi unik masyarakat setempat. Di dunia internasional, Bali
+            terkenal sebagai tujuan wisata yang menawarkan perpaduan unik antara
+            seni, budaya, dan mitos, menarik wisatawan dari berbagai negara.
+          </p>
+        </article>
+        <aside class="image-box">
+          <img src="/assets/images/nusapenida.jpg" alt="Nusa Penida" />
+          <div class="caption">
+            <div class="title-box">
+              <span class="icon-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-map-pin"
+                >
+                  <path
+                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                  />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </span>
+              <p class="title">Nusa Penida</p>
+            </div>
+            <p class="desc">
+              Nusa Penida adalah pulau di tenggara Bali yang terkenal dengan
+              tebing curam, pantai pasir putih, dan air laut biru jernih.
+            </p>
+          </div>
+        </aside>
+      </section>
+      <section id="sejarah" class="content hidden">
+        <article>
+          <h3>Sejarah</h3>
+          <p>
+            Bali telah dihuni sejak sekitar 2000 SM oleh orang-orang Austronesia
+            yang bermigrasi dari Taiwan. Kebudayaan Bali sangat dipengaruhi oleh
+            Hindu, India, dan budaya Jawa, yang mulai terlihat sejak abad ke-1
+            Masehi. Prasasti kuno, termasuk prasasti pilar Blanjong pada tahun
+            914, mencatat keberadaan kerajaan dan dialek khas Bali. Pada abad
+            ke-14, Majapahit mendirikan pemukiman di Bali, dan setelah jatuhnya
+            Majapahit, imigrasi massal orang Jawa memperkuat budaya Hindu di
+            pulau ini. Bali kemudian terbentuk sebagai kumpulan kerajaan Hindu
+            yang independen hingga abad ke-20 ketika Belanda menaklukkan pulau
+            ini. Banyak tradisi, sistem irigasi subak, dan seni budaya Bali yang
+            masih bertahan hingga saat ini.
+          </p>
+        </article>
+        <aside class="image-box">
+          <img src="/assets/images/pura-besakih.jpg" alt="Pura Besakih" />
+          <div class="caption">
+            <div class="title-box">
+              <span class="icon-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-map-pin"
+                >
+                  <path
+                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                  />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </span>
+              <p class="title">Pura Besakih</p>
+            </div>
+            <p class="desc">
+              Pura terbesar dan tertua di Bali, terletak di lereng Gunung Agung.
+              Kompleks pura ini dianggap sebagai pusat spiritual bagi umat Hindu
+              Bali.
+            </p>
+          </div>
+        </aside>
+      </section>
+      <section id="geografi" class="content hidden">
+        <article>
+          <h3>Geografi</h3>
+          <p>
+            Pulau Bali, bagian dari Kepulauan Sunda Kecil, memiliki luas sekitar
+            5.637 km² dengan ibu kota di Denpasar. Bali terbagi menjadi dataran
+            rendah di selatan dan pegunungan di tengah yang memanjang dari barat
+            ke timur, termasuk gunung berapi terkenal seperti Gunung Agung dan
+            Gunung Batur. Pulau ini memiliki empat danau utama: Beratan, Buyan,
+            Tamblingan, dan Batur. Bali juga terkenal sebagai tujuan wisata
+            dengan pusat seni di Ubud, tempat menyelam di Nusa Lembongan, serta
+            pantai dan resort di Kuta, Seminyak, Jimbaran, dan Nusa Dua. Secara
+            administratif, provinsi ini terbagi atas 8 kabupaten dan 1 kota.
+          </p>
+        </article>
+        <aside class="image-box">
+          <img src="/assets/images/gunung-agung.jpg" alt="Pura Besakih" />
+          <div class="caption">
+            <div class="title-box">
+              <span class="icon-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-map-pin"
+                >
+                  <path
+                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                  />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </span>
+              <p class="title">Gunung Agung</p>
+            </div>
+            <p class="desc">
+              Gunung Agung adalah gunung tertinggi di Bali dan dianggap sebagai
+              simbol spiritual penting bagi masyarakat Hindu di pulau ini.
+            </p>
+          </div>
+        </aside>
+      </section>
+      <section id="budaya" class="content hidden">
+        <article>
+          <h3>Budaya</h3>
+          <p>
+            Budaya Bali sangat kaya dan mendalam, berpadu antara unsur religius,
+            kesenian, dan filosofi hidup. Ajaran Tri Hita Karana — harmoni
+            antara manusia, alam, dan Tuhan — menjadi dasar dari seluruh aspek
+            kehidupan masyarakat Bali. Bali dikenal dengan berbagai bentuk seni
+            seperti tari Kecak, Legong, dan Barong, ukiran kayu, serta upacara
+            adat yang digelar hampir setiap hari di pura. Pakaian adat, musik
+            gamelan, serta seni arsitektur khas dengan ukiran batu dan gapura
+            tradisional menegaskan identitas budaya yang kuat dan tetap lestari
+            di tengah modernitas.
+          </p>
+        </article>
+        <aside class="image-box">
+          <img src="/assets/images/tari-kecak.jpg" alt="Tari Kecak" />
+          <div class="caption">
+            <div class="title-box">
+              <span class="icon-wrapper">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-map-pin"
+                >
+                  <path
+                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                  />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </span>
+              <p class="title">Tari Kecak</p>
+            </div>
+            <p class="desc">
+              Tari Kecak adalah tarian tradisional Bali yang menceritakan kisah
+              Ramayana, dengan penari pria yang mengangkat tangan dan
+              mengucapkan "cak" secara ritmis. Tokoh Hanuman sering muncul
+              sebagai simbol keberanian dan kesetiaan.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="slider-section">
+        <div class="slider-header">
+          <h2>Top 5 Wisata di Bali</h2>
+          <p>Kunjungi spot keren di Bali yang bikin liburan makin berkesan!</p>
+        </div>
+
+        <div class="slider-main">
+          <div class="slider-content">
+            <h2 id="slider-title"></h2>
+            <p id="slider-desc"></p>
+            <div class="buttons">
+              <button id="prev-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-left-icon lucide-chevron-left"
+                >
+                  <path d="m15 18-6-6 6-6" />
+                </svg>
+              </button>
+              <button id="next-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-chevron-right-icon lucide-chevron-right"
+                >
+                  <path d="m9 18 6-6-6-6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="slider-images">
+            <div class="slide-wrapper">
+              <div
+                class="slide"
+                data-title="Pantai Kuta"
+                data-desc="Pantai Kuta (Bahasa Bali: Pasih Kuta) terletak di Kuta Selatan, Bali. Dikenal dengan pasir putih lembut, ombak landai untuk berselancar pemula, dan pemandangan sunset yang indah. Sejak 1970-an, pantai ini berkembang menjadi pusat wisata populer dengan hotel, restoran, dan hiburan malam."
+              >
+                <img src="/assets/images/pantai-kuta2.jpg" alt="Pantai Kuta" />
+                <div class="slide-caption">Pantai Kuta</div>
+              </div>
+
+              <div
+                class="slide"
+                data-title="Monkey Forest"
+                data-desc="Monkey Forest adalah hutan suci yang terkenal di Ubud, dihuni ratusan monyet ekor panjang yang bebas berkeliaran. Selain menampilkan kehidupan satwa, area ini juga memiliki pura-pura kuno, jalur hijau yang rindang, dan menjadi pusat budaya serta ekowisata yang populer di Bali."
+              >
+                <img
+                  src="/assets/images/monkey-forest.jpg"
+                  alt="Monkey Forest"
+                />
+
+                <div class="slide-caption">Monkey Forest</div>
+              </div>
+
+              <div
+                class="slide"
+                data-title="Pantai Kelingking"
+                data-desc="Pantai Kelingking terkenal dengan tebing berbentuk seperti T-Rex yang ikonik, air laut biru jernih, dan pasir putih lembut. Pemandangannya yang dramatis menjadikannya salah satu spot foto paling populer di Nusa Penida, ideal untuk trekking, menikmati panorama alam, dan menangkap momen matahari terbenam."
+              >
+                <img
+                  src="/assets/images/pantai-kelingking.jpg"
+                  alt="Pantai Kelingking"
+                />
+
+                <div class="slide-caption">Pantai Kelingking</div>
+              </div>
+
+              <div
+                class="slide"
+                data-title="Tanah Lot"
+                data-desc="Pura ikonik di atas batu karang di tepi laut Bali, terkenal dengan panorama matahari terbenam yang menakjubkan. Ombak menghantam karang, menciptakan efek dramatis, sementara pura dan laut berpadu menjadi latar yang memukau. Tempat ini selalu ramai dikunjungi wisatawan dan fotografer karena keindahan alamnya yang unik."
+              >
+                <img src="/assets/images/tanah-lot.jpg" alt="Tanah Lot" />
+
+                <div class="slide-caption">Tanah Lot</div>
+              </div>
+
+              <div
+                class="slide"
+                data-title="Gunung Agung"
+                data-desc="Gunung tertinggi di Bali yang sakral bagi masyarakat Hindu, menjadi lokasi spiritual dan trekking menantang. Dari puncaknya, panorama sunrise memukau terlihat membentang ke seluruh Pulau Bali, memberi pengalaman luar biasa bagi para pendaki dan penggemar alam."
+              >
+                <img
+                  src="/assets/images/gunung-agung2.jpg"
+                  alt="Gunung Agung"
+                />
+
+                <div class="slide-caption">Gunung Agung</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fakta-bali">
+        <h2>4 Fakta Menarik Bali</h2>
+        <div class="fakta-grid">
+          <div class="fakta-item">
+            <img src="/assets/images/pura3.jpg" alt="Pulau Seribu Pura" />
+            <div class="fakta-overlay">
+              <p class="fakta-title">10.000+</p>
+              <span class="fakta-text">Pura</span>
+            </div>
+          </div>
+          <div class="fakta-item">
+            <img src="/assets/images/hindu.jpg" alt="Budaya Hidup" />
+            <div class="fakta-overlay">
+              <p class="fakta-title">3.700.000+</p>
+              <span class="fakta-text">Penduduk Hindu</span>
+            </div>
+          </div>
+          <div class="fakta-item">
+            <img src="/assets/images/turis.jpg" alt="Destinasi Seni" />
+            <div class="fakta-overlay">
+              <p class="fakta-title">6.300.000+</p>
+              <span class="fakta-text">Wisatawan per Tahun</span>
+            </div>
+          </div>
+          <div class="fakta-item">
+            <img src="/assets/images/gwk.jpg" alt="Surga Alam" />
+            <div class="fakta-overlay">
+              <p class="fakta-title">121 M</p>
+              <span class="fakta-text">Patung Tertinggi</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Bali Explore. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
