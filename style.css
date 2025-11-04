@@ -168,20 +168,37 @@ header .hero-content-2 div {
 /* MAIN */
 
 main {
-  padding: 2rem;
-  margin: 0 3rem;
-  margin-top: 3rem;
+  padding: 5rem;
+  margin: 0;
+  padding-top: 3rem;
+  background: radial-gradient(
+      circle at 0% 35%,
+      /* sisi kiri atas */ rgba(204, 147, 94, 0.45) 0%,
+      rgba(204, 147, 94, 0.18) 6%,
+      rgba(255, 255, 255, 0) 12%
+    ),
+    radial-gradient(
+      circle at 100% 12%,
+      /* sisi kanan atas */ rgba(204, 147, 94, 0.45) 0%,
+      rgba(204, 147, 94, 0.18) 6%,
+      rgba(255, 255, 255, 0) 12%
+    ),
+    #fffcf1; /* warna dasar */
 }
+
 main span {
   font-size: 1rem;
   font-weight: 500;
-  color: #ffcc00;
+  color: #d98324;
   text-align: start;
 }
 main h2 {
   font-size: 2.5rem;
   font-weight: 700;
   text-align: start;
+}
+
+.about {
 }
 
 .buttons {
@@ -197,21 +214,25 @@ main h2 {
   padding: 0.5rem 1.5rem;
   border-radius: 50px;
   font-size: 0.9rem;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .buttons button:hover {
-  background-color: #ffcc00; /* warna hover lebih gelap */
-  border-color: #ffcc00;
+  background-color: #fcefcb; /* warna hover lebih gelap */
+  border-color: #fcefcb;
+  color: #d98324;
+  font-weight: 500;
   transform: translateY(-3px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
 
 .buttons button.active {
-  background-color: #ffcc00;
-  color: black;
-  border-color: #ffcc00;
+  background-color: #fcefcb;
+  color: #d98324;
+  font-weight: 500;
+  border-color: #fcefcb;
 }
 .content {
   display: flex;
@@ -242,7 +263,7 @@ main .content article h3::after {
   left: 0;
   width: 60px;
   height: 4px;
-  background-color: #ffcc00;
+  background-color: #d98324;
   border-radius: 2px;
 }
 
@@ -318,7 +339,7 @@ main .content aside.image-box .title {
 }
 
 .icon-wrapper {
-  background-color: #ffcc00;
+  background-color: #fcefcb;
   border-radius: 50%;
   padding: 6px;
   display: flex;
@@ -329,7 +350,7 @@ main .content aside.image-box .title {
 .icon-wrapper svg {
   width: 14px;
   height: 14px;
-  color: white;
+  color: #d98324;
 }
 
 /* baris kedua (deskripsi) */
@@ -405,10 +426,13 @@ main .content aside.image-box .title {
 }
 
 .slider-main .buttons button:hover {
-  background-color: #ffcc00; /* warna hover lebih gelap */
-  border-color: #ffcc00;
+  background-color: #fcefcb; /* warna hover lebih gelap */
+  border-color: #fcefcb;
   transform: translateY(-3px);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+.slider-main .buttons button:hover svg {
+  stroke: #d98324; /* warna stroke svg berubah */
 }
 
 .slider-main .buttons button svg {
@@ -488,10 +512,17 @@ main .content aside.image-box .title {
   width: calc(100% + 10rem);
 }
 
+.fakta-label {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #d98324;
+  font-weight: 600;
+}
 .fakta-bali h2 {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .fakta-grid {
