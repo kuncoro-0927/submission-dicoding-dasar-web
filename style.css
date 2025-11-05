@@ -9,6 +9,7 @@ body {
   width: 100%;
   overflow-x: hidden; /* cegah geser horizontal */
   font-family: "Figtree", sans-serif;
+  background: #fffcf1;
 }
 
 /* HEADER */
@@ -17,7 +18,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: url("assets/images/bali2.webp") center/cover no-repeat;
+  background: url("assets/images/header2.jpg") center/cover no-repeat;
   padding: 2rem;
   color: white;
   height: 100vh;
@@ -182,8 +183,7 @@ main {
       /* sisi kanan atas */ rgba(204, 147, 94, 0.45) 0%,
       rgba(204, 147, 94, 0.18) 6%,
       rgba(255, 255, 255, 0) 12%
-    ),
-    #fffcf1; /* warna dasar */
+    );
 }
 
 main span {
@@ -378,6 +378,14 @@ main .content aside.image-box .title {
   text-align: center;
 }
 
+.slider-section .slider-header p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #d98324;
+  font-weight: 600;
+}
+
 .slider-section .slider-header h2 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -521,7 +529,7 @@ main .content aside.image-box .title {
 }
 .fakta-bali h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 3rem;
 }
 
@@ -582,11 +590,65 @@ main .content aside.image-box .title {
 }
 
 footer {
-  clear: both;
-  padding: 2rem;
   text-align: center;
-  background: #f1f1f1;
-  position: relative; /* atau hilangkan jika ada absolute */
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* kiri-kanan */
+  align-items: center; /* sejajarkan vertikal */
+  padding-bottom: 5rem;
+}
+.footer-content h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  max-width: 500px;
+  text-align: left;
+}
+
+.footer-content h2 .highlight {
+  color: #666666; /* bisa diganti misal #f7c948 atau warna khas Bali */
+  font-weight: 600;
+}
+.footer-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  padding: 0;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  font-weight: 400;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+  color: #d98324;
+}
+
+.footer-line {
+  width: 100%;
+  height: 0.1px;
+  background: #aaa;
+  margin: 0 auto 2rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+footer p span {
+  font-weight: 600;
 }
 
 .hidden {
@@ -716,7 +778,7 @@ footer {
   /* MAIN */
   main {
     padding: 0;
-    margin: 0 1.5rem;
+    padding: 0 1.5rem;
     margin-top: 3rem;
   }
 
@@ -895,19 +957,68 @@ footer {
     color: #fff;
   }
 
-  .about {
-    /* full width, text center */
-  }
-  .top-wisata {
-    /* satu kolom per baris */
-  }
-  .fakta {
-    /* font lebih kecil */
-  }
   footer {
-    /* perataan tengah */
+    text-align: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column; /* dari baris jadi kolom */
+    align-items: center; /* biar rata tengah secara horizontal */
+    gap: 1.5rem; /* jarak antar elemen */
+    padding-bottom: 5rem;
+    text-align: center; /* teks di tengah */
+  }
+  .footer-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 500px;
+    text-align: left;
   }
 
+  .footer-content h2 .highlight {
+    color: #666666; /* bisa diganti misal #f7c948 atau warna khas Bali */
+    font-weight: 600;
+  }
+  .footer-menu {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding: 0;
+  }
+
+  .footer-menu a {
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    transition: color 0.3s ease;
+  }
+
+  .footer-menu a:hover {
+    color: #d98324;
+  }
+
+  .footer-line {
+    width: 100%;
+    height: 0.1px;
+    background: #aaa;
+    margin: 0 auto 2rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    color: #aaa;
+  }
+
+  footer p span {
+    font-weight: 600;
+  }
   .hidden {
     display: none;
   }
