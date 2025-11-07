@@ -30,7 +30,7 @@ header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
   z-index: 0;
 }
 
@@ -90,7 +90,7 @@ header .hero-content {
   margin-bottom: auto;
   max-width: 800px;
   align-self: flex-start;
-  padding-left: 4rem;
+  padding-left: 3rem;
 }
 
 header .hero-content h1 {
@@ -370,7 +370,7 @@ main .content aside.image-box .title {
   gap: 2rem;
   margin-top: 7rem;
   align-items: flex-start;
-  min-height: 400px;
+  height: 500px;
 }
 
 .slider-section .slider-header {
@@ -396,6 +396,7 @@ main .content aside.image-box .title {
 .slider-main {
   display: flex;
   gap: 2rem;
+
   align-items: flex-start;
 }
 
@@ -452,7 +453,6 @@ main .content aside.image-box .title {
 .slider-main .slider-images {
   display: flex;
   align-items: center;
-  overflow: hidden;
   width: 650px;
   overflow: hidden;
 }
@@ -470,7 +470,6 @@ main .content aside.image-box .title {
   height: 290px;
   border-radius: 10px;
   flex-shrink: 0;
-
   transition: width 0.5s ease, height 0.5s ease, opacity 0.5s ease;
 }
 
@@ -591,10 +590,16 @@ main .content aside.image-box .title {
 
 footer {
   text-align: center;
-  margin-left: 5rem;
-  margin-right: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   margin-top: 0rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  background: radial-gradient(
+    circle at 100% 60%,
+    /* sisi kanan atas */ rgba(204, 147, 94, 0.45) 0%,
+    rgba(204, 147, 94, 0.18) 6%,
+    rgba(255, 255, 255, 0) 12%
+  );
 }
 
 .footer-content {
@@ -611,7 +616,7 @@ footer {
 }
 
 .footer-content h2 .highlight {
-  color: #666666; /* bisa diganti misal #f7c948 atau warna khas Bali */
+  color: #d98324;
   font-weight: 600;
 }
 .footer-menu {
@@ -657,17 +662,365 @@ footer p span {
 
 /* === Tablet (max-width: 1024px) === */
 @media (max-width: 1024px) {
+  /* HEADER */
   header {
-    /* misal perkecil tinggi header */
+    padding: 4.5rem;
   }
-  .about {
-    /* ubah jadi 2 kolom */
+
+  nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    display: none; /* disembunyikan dulu */
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
   }
-  .top-wisata {
-    /* sesuaikan ukuran gambar */
+
+  nav ul {
+    flex-direction: column;
+    gap: 1.2rem;
   }
-  .fakta {
-    /* perpendek text atau ubah grid */
+
+  .menu-toggle {
+    display: block;
+  }
+  nav.active {
+    display: flex;
+  }
+
+  header .hero-content {
+    text-align: left;
+    color: white;
+    margin-top: 10rem;
+    margin-bottom: auto;
+    align-self: flex-start;
+    padding-left: 0;
+    max-width: 85%;
+  }
+
+  header .hero-content h1 {
+    font-size: 4.5rem;
+  }
+
+  header .hero-content p {
+    font-size: 1rem;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+
+  header .hero-content-1 {
+    gap: 0;
+    width: 50%;
+    padding-right: 0;
+  }
+
+  aside.hero-content-1 div {
+    max-width: 100%;
+  }
+
+  aside.hero-content-1 h2 {
+    font-size: 1.2rem;
+  }
+
+  aside.hero-content-1 p {
+    font-size: 1rem;
+  }
+
+  header .hero-content-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+
+  header .hero-content-2 div {
+    gap: 0;
+  }
+
+  .hero-content-2 .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 0;
+    width: 50%;
+  }
+
+  .hero-content-2 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+
+    max-width: auto;
+  }
+
+  .hero-content-2 p {
+    font-size: 0.9rem;
+
+    margin: 0;
+  }
+
+  /* MAIN */
+  main {
+    padding: 0;
+    padding: 0 4.5rem;
+    margin-top: 3rem;
+  }
+
+  main span {
+    font-size: 0.9rem;
+  }
+  main h2 {
+    font-size: 2.5rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .buttons button {
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    color: black;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    width: 100%;
+    padding-top: 1rem;
+    border-radius: 10px;
+  }
+
+  main .article {
+    flex: 3;
+  }
+
+  main .content article h3 {
+    font-size: 1.5rem;
+  }
+
+  main .content article p {
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #444;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  main .content aside.image-box {
+    width: 100%;
+  }
+
+  main .content aside.image-box img {
+    width: 100%;
+  }
+
+  main .content aside.image-box .caption {
+    padding: 2rem 2rem;
+  }
+
+  /* TOP WISATA */
+
+  .slider-section {
+    gap: 2rem;
+
+    height: 670px;
+    margin-top: 5rem;
+    align-items: flex-start;
+  }
+
+  .slider-section .slider-header {
+    margin-bottom: 1.5rem;
+
+    text-align: center;
+  }
+
+  .slider-main .slider-images {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slider-section .slider-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .slider-section .slider-header p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .slider-main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .slider-main .slider-content {
+    flex: 1;
+  }
+
+  .slider-main .slider-content h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .slider-main .slider-content p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  /* FAKTA */
+  .fakta-bali {
+    /* bikin full width, lepas dari padding/margin global main */
+    width: 100vw; /* vw = lebar viewport */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-top: 3rem;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
+  .fakta-bali h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .fakta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom dengan lebar sama */
+    width: 100%;
+  }
+
+  .fakta-item {
+    position: relative;
+
+    flex: 1; /* tiap gambar sama besar */
+    height: 400px; /* bisa sesuaikan */
+    overflow: hidden;
+  }
+
+  .fakta-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+
+  .fakta-item:hover img {
+    transform: scale(1.03);
+  }
+
+  .fakta-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+  }
+
+  .fakta-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .fakta-text {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  footer {
+    text-align: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column; /* dari baris jadi kolom */
+    align-items: center; /* biar rata tengah secara horizontal */
+    gap: 1.5rem; /* jarak antar elemen */
+    padding-bottom: 5rem;
+    text-align: center; /* teks di tengah */
+  }
+  .footer-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    max-width: 500px;
+    text-align: left;
+  }
+
+  .footer-content h2 .highlight {
+    color: #666666; /* bisa diganti misal #f7c948 atau warna khas Bali */
+    font-weight: 600;
+  }
+  .footer-menu {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding: 0;
+  }
+
+  .footer-menu a {
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+
+  .footer-menu a:hover {
+    color: #d98324;
+  }
+
+  .footer-line {
+    width: 100%;
+    height: 0.1px;
+    background: #aaa;
+    margin: 0 auto 2rem;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+    color: #aaa;
+  }
+
+  footer p span {
+    font-weight: 600;
+  }
+  .hidden {
+    display: none;
   }
 }
 
@@ -900,6 +1253,7 @@ footer p span {
     position: relative;
     left: 50%;
     right: 50%;
+    margin-top: 2.5rem;
     margin-left: -50vw;
     margin-right: -50vw;
   }
@@ -997,6 +1351,7 @@ footer p span {
     text-decoration: none;
     font-weight: 400;
     color: black;
+    font-size: 0.9rem;
     transition: color 0.3s ease;
   }
 
